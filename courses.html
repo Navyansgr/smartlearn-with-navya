@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - LearnSmart</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 15px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #e05a00;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .course-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .course-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .course-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-box h3 {
+      color: #ff6600;
+    }
+
+    .course-box p {
+      color: #555;
+    }
+
+    .enroll-btn {
+      display: inline-block;
+      background-color: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .enroll-btn:hover {
+      background-color: #e05a00;
+    }
+
+    .links {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .links h3 {
+      color: #ff6600;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .links a {
+      display: block;
+      color: #007bff;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LearnSmart Courses with Navyashree</h1>
+    <h4>A learning platform developed by third year cse amcec student navyashree</h4>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Engineering Courses</h2>
+    <div class="course-container">
+      <div class="course-box">
+        <h3>Data Science</h3>
+        <p>Learn the basics of Data Science and Machine Learning with hands-on exercises.</p>
+        <a href="https://www.coursera.org/courses?query=data%20science" class="enroll-btn" target="_blank">Enroll Now</a>
+      </div>
+
+      <div class="course-box">
+        <h3>Web Development</h3>
+        <p>Build modern, responsive websites using HTML, CSS, and JavaScript.</p>
+        <a href="https://www.freecodecamp.org/learn/" class="enroll-btn" target="_blank">Enroll Now</a>
+      </div>
+
+      <div class="course-box">
+        <h3>AI and Deep Learning</h3>
+        <p>Explore the exciting world of AI with Deep Learning and Neural Networks.</p>
+        <a href="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python" class="enroll-btn" target="_blank">Enroll Now</a>
+      </div>
+
+      <div class="course-box">
+        <h3>Software Engineering</h3>
+        <p>Master the principles of Software Engineering to build large-scale applications.</p>
+        <a href="https://www.coursera.org/specializations/software-development" class="enroll-btn" target="_blank">Enroll Now</a>
+      </div>
+
+      <div class="course-box">
+        <h3>Computer Networks</h3>
+        <p>Understand the fundamentals of computer networking and protocols.</p>
+        <a href="https://www.udemy.com/course/computer-networking-for-beginners/" class="enroll-btn" target="_blank">Enroll Now</a>
+      </div>
+
+      <div class="course-box">
+        <h3>Cloud Computing</h3>
+        <p>Learn how to build and manage scalable cloud infrastructures.</p>
+        <a href="https://www.edx.org/course/cloud-computing" class="enroll-btn" target="_blank">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="links">
+      <h3>Free Resources for Engineering Students</h3>
+      <a href="https://www.khanacademy.org/" target="_blank">Khan Academy - Free courses in Engineering, Math, Science</a>
+      <a href="https://www.edx.org/" target="_blank">edX - Online Courses from Top Universities</a>
+      <a href="https://www.coursera.org/" target="_blank">Coursera - Free Engineering Courses</a>
+      <a href="https://www.udemy.com/" target="_blank">Udemy - Engineering Courses (Free & Paid)</a>
+      <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp - Free Web Development and Coding Lessons</a>
+      <a href="https://www.tutorialspoint.com/" target="_blank">TutorialsPoint - Free Programming and Engineering Tutorials</a>
+      <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks - Computer Science and Engineering Resources</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 LearnSmart. All Rights Reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
+
+
+    
